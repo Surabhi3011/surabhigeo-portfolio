@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Route Navigator — Surabhi Gupta</title>
+<meta name="description" content="A Node.js application that calculates best route, alternate routes, and elevation profiles between source and destination using open source data.">
+<link rel="canonical" href="https://surabhigeo.com/projects/route-navigator.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Surabhi Gupta">
+<meta property="og:title" content="Route Navigator — Surabhi Gupta">
+<meta property="og:description" content="A Node.js application that calculates best route, alternate routes, and elevation profiles between source and destination using open source data.">
+<meta property="og:url" content="https://surabhigeo.com/projects/route-navigator.html">
+<meta property="og:image" content="https://surabhigeo.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Route Navigator — Surabhi Gupta">
+<meta name="twitter:description" content="A Node.js application that calculates best route, alternate routes, and elevation profiles between source and destination using open source data.">
+<meta name="twitter:image" content="https://surabhigeo.com/assets/img/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232F1208%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 fill=%22%23E27634%22 font-family=%22Georgia,serif%22 text-anchor=%22middle%22>S</text></svg>">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">Surabhi<span>Gupta</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#writing">Writing</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<section class="case-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+    <span class="tag">Node.js</span>
+    <h1>Route Navigator</h1>
+    <div class="case-meta">
+      <div>
+        <div class="label">Tech</div>
+        <div class="value">Node.js, open source routing &amp; elevation data</div>
+      </div>
+      <div>
+        <div class="label">Type</div>
+        <div class="value">Personal project</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <section>
+      <h2>Problem</h2>
+      <p>Free, general-purpose route planners rarely surface alternate paths or terrain data together — useful when comparing routes for hiking, cycling, or field logistics where elevation gain matters as much as distance.</p>
+    </section>
+    <section>
+      <h2>Approach</h2>
+      <p>Built a Node.js application that consumes open source routing and elevation data to compute the best route between a source and destination, along with alternate route options.</p>
+      <ul>
+        <li>Fetches routing data from open source APIs and parses route geometry.</li>
+        <li>Computes primary and alternate routes for the same source/destination pair.</li>
+        <li>Derives elevation profiles along each route for terrain comparison.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Outcome</h2>
+      <p>A working Node.js tool that returns route options with elevation context in a single request, useful as a lightweight alternative to piecing together multiple mapping tools.</p>
+    </section>
+  </div>
+</section>
+
+<div class="case-cta container">
+  <a href="https://github.com/Surabhi3011/" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub →</a>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>&copy; <span class="year-tag">2026</span> Surabhi Gupta</span>
+      <a href="https://geocloudinsights.substack.com/" target="_blank" rel="noopener">GeoCloud Insights</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

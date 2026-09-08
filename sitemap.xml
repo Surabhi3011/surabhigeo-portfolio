@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://surabhigeo.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/route-navigator.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/ndvi-calculator.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/auto-domain-updater.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/emergency-response-optimization.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/epsg-coordinate-finder.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://surabhigeo.com/projects/custom-gpts.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

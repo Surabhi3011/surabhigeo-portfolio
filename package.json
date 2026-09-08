@@ -1,0 +1,9 @@
+{
+  "name": "surabhi-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio site for Surabhi Gupta",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  }
+}

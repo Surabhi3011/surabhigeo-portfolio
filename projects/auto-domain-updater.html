@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Domain Updater — Surabhi Gupta</title>
+<meta name="description" content="A Python tool that syncs coded-value domains across feature classes in ArcGIS Pro.">
+<link rel="canonical" href="https://surabhigeo.com/projects/auto-domain-updater.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Surabhi Gupta">
+<meta property="og:title" content="Auto Domain Updater — Surabhi Gupta">
+<meta property="og:description" content="A Python tool that syncs coded-value domains across feature classes in ArcGIS Pro.">
+<meta property="og:url" content="https://surabhigeo.com/projects/auto-domain-updater.html">
+<meta property="og:image" content="https://surabhigeo.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto Domain Updater — Surabhi Gupta">
+<meta name="twitter:description" content="A Python tool that syncs coded-value domains across feature classes in ArcGIS Pro.">
+<meta name="twitter:image" content="https://surabhigeo.com/assets/img/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232F1208%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 fill=%22%23E27634%22 font-family=%22Georgia,serif%22 text-anchor=%22middle%22>S</text></svg>">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">Surabhi<span>Gupta</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#writing">Writing</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<section class="case-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+    <span class="tag">Python / ArcGIS Pro</span>
+    <h1>Auto Domain Updater for File Geodatabases</h1>
+    <div class="case-meta">
+      <div>
+        <div class="label">Tech</div>
+        <div class="value">Python, ArcPy, File Geodatabases</div>
+      </div>
+      <div>
+        <div class="label">Type</div>
+        <div class="value">Personal project</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <section>
+      <h2>Problem</h2>
+      <p>Coded-value domains in a file geodatabase are easy to update once, but keeping every feature class that references that domain in sync is a repetitive manual task prone to being skipped or done inconsistently.</p>
+    </section>
+    <section>
+      <h2>Approach</h2>
+      <p>Built a Python tool that walks a file geodatabase, identifies feature classes referencing a given coded-value domain, and applies domain updates consistently across all of them.</p>
+      <ul>
+        <li>Scans the geodatabase schema for domain references across feature classes.</li>
+        <li>Applies additions, edits, or removals to coded values in one pass.</li>
+        <li>Removes the need for manual, feature-class-by-feature-class updates.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Outcome</h2>
+      <p>A common geodatabase maintenance task that used to require touching each feature class individually now runs as a single script, reducing both time spent and risk of inconsistent domains.</p>
+    </section>
+  </div>
+</section>
+
+<div class="case-cta container">
+  <a href="https://github.com/Surabhi3011/" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub →</a>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>&copy; <span class="year-tag">2026</span> Surabhi Gupta</span>
+      <a href="https://geocloudinsights.substack.com/" target="_blank" rel="noopener">GeoCloud Insights</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
