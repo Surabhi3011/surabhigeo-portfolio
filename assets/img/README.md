@@ -1,12 +1,7 @@
-Drop your headshot here as `headshot.jpg` (or .png), then in `index.html` replace
-the `.hero-avatar` div's "SG" text with:
-
-```html
-<img src="assets/img/headshot.jpg" alt="Surabhi Gupta">
-```
-
-Also drop a resume PDF at `assets/resume.pdf` — the "Download resume" button
-on the homepage already points there.
+Headshot: `myphoto.png`, used in the hero's `.hero-photo` panel in `index.html`.
+Resume: `../pdf/SurabhiGupta.pdf`, linked from the "Download resume" button and
+the "Resume" link in the hero. To swap either file, keep the same filename or
+update the corresponding path in `index.html`.
 
 `og-image.jpg` (1200×630px) already exists — a generated placeholder built
 from `og-image.svg` in this folder, showing your name, title, domain, and the

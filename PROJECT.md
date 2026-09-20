@@ -37,11 +37,13 @@ Single scrolling homepage (`index.html`) + separate static pages for project cas
 ## Homepage sections (in order)
 
 1. **Nav bar** (sticky) — logo mark "SG" + anchor links: About, Experience, Projects, Writing, Contact
-2. **Hero**
-   - Name, title tagline ("GIS Business Analyst | Spatial Data Engineering & GeoAI")
-   - One-line pitch (5+ yrs, 700+ issues resolved, 5600+ LinkedIn following)
-   - Photo/headshot (pending — see Open items)
-   - Buttons: **View projects** (scrolls to Projects), **Download resume** (pending PDF — see Open items)
+2. **Hero** — two-column layout (text left, large photo right; stacks on mobile), styled after a reference split-hero layout
+   - Eyebrow: "GIS Business Analyst · Open to remote roles"
+   - Headline: name + accent italic sub-line ("Spatial Data & GeoAI.")
+   - Pitch paragraph + bordered pull-quote callout (700+ issues resolved stat)
+   - Photo panel: `assets/img/myphoto.png`, 4:5 aspect ratio, rounded corners
+   - Buttons: **View projects** (scrolls to Projects), **Download resume** → `assets/pdf/SurabhiGupta.pdf`
+   - Link row below: LinkedIn, GitHub, Newsletter, Email, Resume
 3. **About** — professional summary + core competencies grid (GIS platforms, databases, automation/scripting, applied AI, cloud, delivery)
 4. **Experience** — timeline, most recent first:
    - GIS Business Analyst, Esri India (Nov 2025–Present)
@@ -88,8 +90,8 @@ Clean & minimal — generous whitespace (within the dark palette), simple sans-s
 
 ## Open items (need from Surabhi before final build)
 
-- [ ] Headshot/photo file for hero section — drop into `/assets/img/`
-- [ ] Resume PDF for "Download resume" button — drop into `/assets/resume.pdf` (button ships pointing to placeholder until then)
+- [x] Headshot/photo file added at `/assets/img/myphoto.png`
+- [x] Resume PDF added at `/assets/pdf/SurabhiGupta.pdf`, "Download resume" button wired up
 - [ ] Confirm `--text-primary` off-white shade once first draft is visible
 - [ ] Confirm Substack DNS/custom-domain setup for `blog.surabhigeo.com` (done outside this codebase, in VaporHost DNS + Substack settings)
 - [x] `/assets/img/og-image.jpg` (1200×630px) — placeholder generated from `/assets/img/og-image.svg` (name, tagline, domain, brand accents); swap for a custom design later if desired
@@ -108,4 +110,7 @@ Clean & minimal — generous whitespace (within the dark palette), simple sans-s
 - Substack connected via subdomain redirect, not embedded RSS (2026-09-08)
 - Contact section is links-only, no form, for now (2026-09-08)
 - Photo: yes, pending file. Resume PDF: pending file (2026-09-08)
+- Photo added as `assets/img/myphoto.png`, resume added as `assets/pdf/SurabhiGupta.pdf` (paths differ from original plan — updated hero `<img>` and both resume links to match) (2026-09-20)
 - Switched to light theme; supplied dark-brown/orange hexes used as accents (buttons, links, nav/footer, text) on a new white/off-white background (2026-09-08)
+- Added background graphics: site-wide dot-grid texture, wireframe globe graphic (originally a node-triangle, replaced per feedback), topographic lines in the writing box (2026-09-08/09)
+- Restructured hero to a two-column split layout (text + large photo panel, pull-quote callout) matching a reference design the user provided; removed the old centered circular avatar and hero background graphic (2026-09-09)
