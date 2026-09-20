@@ -5,6 +5,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://surabhigeo.com/projects/urbanpulse.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://surabhigeo.com/projects/route-navigator.html</loc>
     <priority>0.6</priority>
   </url>

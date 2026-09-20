@@ -68,7 +68,7 @@ p { margin: 0; }
 }
 
 .section {
-  padding: 88px 0;
+  padding: 56px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -173,7 +173,7 @@ p { margin: 0; }
 /* Hero */
 .hero {
   position: relative;
-  padding: 64px 0 88px;
+  padding: 56px 0 48px;
   overflow: hidden;
 }
 
@@ -201,17 +201,6 @@ p { margin: 0; }
   margin-top: 20px;
   color: var(--text-secondary);
 }
-
-.hero-quote {
-  margin: 28px 0 0;
-  padding: 4px 0 4px 20px;
-  border-left: 3px solid var(--accent);
-  max-width: 480px;
-  font-size: 1.02rem;
-  color: var(--text-primary);
-}
-
-.hero-quote strong { color: var(--accent-deep); }
 
 .hero-actions {
   margin-top: 32px;
@@ -249,6 +238,7 @@ p { margin: 0; }
   aspect-ratio: 4 / 5;
   background: var(--bg-surface);
   border: 1px solid var(--border);
+  box-shadow: 0 24px 48px -12px rgba(35, 13, 9, 0.22), 0 4px 12px rgba(35, 13, 9, 0.08);
 }
 
 .hero-photo img {
@@ -264,7 +254,6 @@ p { margin: 0; }
   }
   .hero-text { text-align: center; margin: 0 auto; }
   .hero-pitch { margin-left: auto; margin-right: auto; }
-  .hero-quote { margin-left: auto; margin-right: auto; text-align: left; }
   .hero-actions { justify-content: center; }
   .hero-links { justify-content: center; }
   .hero-photo { max-width: 340px; margin: 0 auto; }
@@ -403,6 +392,24 @@ p { margin: 0; }
   margin-top: 36px;
 }
 
+/* Plain arrow-style links (secondary actions, not primary CTAs) */
+.link-arrow {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent-deep);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.link-arrow:hover { border-bottom-color: var(--accent-deep); }
+
+.link-arrow-on-dark {
+  color: var(--accent-hover);
+}
+
+.link-arrow-on-dark:hover { border-bottom-color: var(--accent-hover); }
+
 @media (max-width: 860px) {
   .project-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -524,6 +531,22 @@ p { margin: 0; }
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.footer-links-plain {
+  margin-top: 18px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links-plain a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-on-dark-secondary);
+}
+
+.footer-links-plain a:hover { color: var(--accent-hover); }
 
 .footer-bottom {
   border-top: 1px solid var(--surface-dark-alt);

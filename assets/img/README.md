@@ -1,7 +1,7 @@
-Headshot: `myphoto.png`, used in the hero's `.hero-photo` panel in `index.html`.
-Resume: `../pdf/SurabhiGupta.pdf`, linked from the "Download resume" button and
-the "Resume" link in the hero. To swap either file, keep the same filename or
-update the corresponding path in `index.html`.
+Headshot: `SurabhiGupta.webp`, used in the hero's `.hero-photo` panel in `index.html`.
+Resume: `../pdf/SurabhiGupta.pdf`, linked from the "Resume" button in the hero.
+To swap either file, keep the same filename or update the corresponding path
+in `index.html`.
 
 `og-image.jpg` (1200×630px) already exists — a generated placeholder built
 from `og-image.svg` in this folder, showing your name, title, domain, and the
