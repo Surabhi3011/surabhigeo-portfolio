@@ -562,6 +562,109 @@ p { margin: 0; }
 
 .footer-bottom a:hover { color: var(--accent-hover); }
 
+/* Products page */
+.products-page { border-bottom: none; min-height: 60vh; }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--bg-base);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tab:hover { color: var(--accent-deep); border-color: var(--accent); }
+
+.tab[aria-selected="true"] {
+  background: var(--surface-dark);
+  border-color: var(--surface-dark);
+  color: var(--text-on-dark);
+}
+
+.tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (max-width: 480px) {
+  .tabs { gap: 6px; }
+  .tab { padding: 8px 16px; font-size: 0.88rem; }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+  justify-content: center;
+  gap: 24px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -12px rgba(35, 13, 9, 0.18);
+}
+
+.product-cover {
+  aspect-ratio: 4 / 3;
+  background: var(--surface-dark);
+}
+
+.product-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+.product-body {
+  padding: 22px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.product-body .tag {
+  align-self: flex-start;
+  background: rgba(127, 55, 14, 0.1);
+  color: var(--accent-deep);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.product-body p { color: var(--text-secondary); font-size: 0.92rem; flex-grow: 1; }
+
+.product-body .link { font-size: 0.9rem; font-weight: 600; color: var(--accent-deep); }
+
+.coming-soon {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
+
+.coming-soon h3 { color: var(--text-secondary); }
+
 /* Case study pages */
 .case-hero {
   padding: 64px 0 40px;

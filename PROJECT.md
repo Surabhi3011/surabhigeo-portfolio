@@ -125,3 +125,8 @@ Clean & minimal — generous whitespace (within the dark palette), simple sans-s
 - Added a subtle shadow to the hero photo; reduced section padding (88px → 56px) and hero bottom padding (88px → 48px) to tighten whitespace between sections site-wide; "Resume" changed from a plain text link to a second hero button (`.btn-outline`, matching "View projects" in shape but contrasting in color) with a download icon (2026-09-20)
 - Added a "GitHub" nav link (between Experience and Projects) on the homepage and all project case-study pages, opening the GitHub profile in a new tab (2026-09-20)
 - Headshot swapped from `assets/img/myphoto.png` to `assets/img/SurabhiGupta.webp` (updated photo); old file removed, hero `<img>` src updated (2026-09-20)
+- Added `products.html` with three tabs — Ebooks (Gumroad products), Courses (Udemy, coming soon), Hobbies (art products, coming soon). First product: "ArcGIS Enterprise Error Codes Decoded" cheatsheet → https://surabhigeo.gumroad.com/l/EnterpriseGISGuide, cover `assets/img/cover.png`, price intentionally not shown. "Products" added to nav on every page; page added to sitemap. Tabs support deep links (`products.html#courses`, `#hobbies`) (2026-10-02)
+
+## Adding a product
+
+Copy the `<a class="product-card">` block in `products.html` into the right tab's `.product-grid`, then change the link, cover image (`assets/img/`, 4:3 works best), tag, title, and description. To replace a "Coming soon" panel, swap its `<div class="coming-soon">` for a `<div class="product-grid">` containing cards.
